@@ -21,6 +21,7 @@ jobs:
     env:
       KUBERNETES_VERSION: ${{ matrix.kubernetes_versions }}
       TEST_SCHEDULER_MANIFEST: "deployment"
+      STORAGE_CAPACITY: "false"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
